@@ -1,4 +1,8 @@
 import CollegeData from "./components/CollegeData";
+import Counter from "./components/Counter";
+import { useState } from "react";
+import ReactLifeCycle from "./components/ReactLifeCycle";
+import UserCards from "./components/UserCards";
 
 function App() {
   const collegeData = [
@@ -72,12 +76,20 @@ function App() {
       ],
     },
   ];
+
+  const [count, setCount] = useState(0);
+  const [display, setDisplay] = useState(true);
+
   return (
     <>
-      <h1>Nested Loop</h1>
+      {/* <h1>Nested Loop</h1>
       {collegeData.map((college) => (
         <CollegeData key={college.collegeId} college={college} />
-      ))}
+      ))} */}
+      {/* {display && <Counter count={count} />}
+      <button onClick={() => setCount(count + 1)}>Click</button>
+      <button onClick={() => setDisplay(!display)}>Toggle</button> */}
+      <UserCards />
     </>
   );
 }

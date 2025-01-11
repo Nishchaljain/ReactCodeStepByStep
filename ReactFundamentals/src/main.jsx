@@ -6,7 +6,7 @@ import UseEffectHook from "./components/UseEffectHook.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    {/* <App /> */}
-    <UseEffectHook />
+    <App />
+    {/* <UseEffectHook /> */}
   </StrictMode>
 );
